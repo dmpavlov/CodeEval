@@ -1,0 +1,29 @@
+[Bb]in/
+[Oo]bj/
+[Tt]est[Rr]esult*
+
+*.suo
+*.user
+*.sln.docstates
+
+[Dd]ebug/
+[Rr]elease/
+x64/
+*.tmp
+*.log
+*.vspscc
+*.vssscc
+.builds
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+
+# ReSharper is a .NET coding add-in
+_ReSharper*
+
+# NuGet Packages Directory
+packages
+
+.DS_Store
