@@ -2,11 +2,11 @@ namespace Domain
 {
     public class PangramsAnalyzer
     {
-        private readonly Alpabet alphabet = new Alpabet();
+        private readonly Alphabet alphabet = new Alphabet();
 
         public string FindMissingLetters(string sentense)
         {
-            if (string.IsNullOrEmpty(sentense))
+            if (IsEmpty(sentense))
             {
                 return alphabet.ToString();
             }
@@ -17,6 +17,11 @@ namespace Domain
             }
 
             return alphabet.PrintNotFoundLetters();
+        }
+
+        private static bool IsEmpty(string sentense)
+        {
+            return string.IsNullOrEmpty(sentense);
         }
     }
 }
